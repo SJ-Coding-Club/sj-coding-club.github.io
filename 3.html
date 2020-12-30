@@ -1,0 +1,88 @@
+<html><head>
+    <style>
+        body {
+            color: black;
+            font-family: monospace;
+            word-wrap: break-word;
+            width: 600px;
+         }
+    </style>
+</head><body><h1 id="basic-math">Basic Math</h1>
+<p>In this lesson, we're going to be talking about performing basic math operations using Python.</p>
+<h2 id="operators">Operators</h2>
+<p>Here is a quick rundown of most of the major operators in Python.</p>
+<ul>
+<li><b>+</b> : addition</li>
+<li><b>-</b> : subtraction</li>
+<li><b>/</b> : division</li>
+<li><b>*</b> : multiplication</li>
+<li><b>%</b> : modulus</li>
+</ul>
+<p>Some useful terminology: These symbols are all called <b>operators</b>. The two numbers they go between are called <b>operands</b>.  So in the example <i>2 + 3</i>, + is the operator and 2 and 3 are the operands. </p>
+<h3 id="some-practice-using-these-operators">Some Practice Using These Operators</h3>
+<p>Just like we printed text using print(), for now, we are going to use the print function to display the results of our math calculations.</p>
+<p>Type the following code into math1.py:</p>
+<hr>
+<pre><code><span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-string">"Here is some addition:"</span>)</span></span>
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-number">1</span> + <span class="hljs-number">2</span>)</span></span>
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-number">5</span> + <span class="hljs-number">4</span>)</span></span>
+
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-string">"Now some subtraction:"</span>)</span></span>
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-number">13</span>-<span class="hljs-number">3</span>)</span></span>
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-number">15</span>-<span class="hljs-number">5</span>)</span></span>
+
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-string">"Multiplication"</span>)</span></span>
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-number">5</span>*<span class="hljs-number">3</span>)</span></span>
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-number">4</span>*<span class="hljs-number">7</span>)</span></span>
+
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-string">"Division"</span>)</span></span>
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-number">10</span>/<span class="hljs-number">5</span>)</span></span>
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-number">15</span>/<span class="hljs-number">2</span>)</span></span>
+
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-string">"Mod"</span>)</span></span>
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-number">5</span> % <span class="hljs-number">2</span>)</span></span>
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-number">10</span> % <span class="hljs-number">4</span>)</span></span>
+</code></pre><hr>
+<p>Now, let's say we want to display text and math on the same line. There are many ways to do that, but here's a simple one:</p>
+<pre><code><span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-string">"1 + 1 equals"</span>, <span class="hljs-number">1</span> + <span class="hljs-number">1</span>)</span></span>
+</code></pre><p>Output: <i>1 + 1 equals 2</i> (Note how it automatically adds a space after "equals")</p>
+<p>Simply type your string message, then place a comma after it, and then type your math expression. You can do this in any order, any amount of times.</p>
+<p>Here is math2.py:</p>
+<hr>
+<pre><code>print(<span class="hljs-string">"4 times 4 is"</span>, <span class="hljs-number">4</span> * <span class="hljs-number">4</span>)
+
+print(<span class="hljs-string">"Here's a longer math expression:"</span>, <span class="hljs-number">1</span> / <span class="hljs-number">2</span> + <span class="hljs-number">3</span> * <span class="hljs-number">4</span> + <span class="hljs-number">5</span> % <span class="hljs-number">2</span>)
+# Remember PEMDAS?
+
+print(<span class="hljs-string">"5! is equal to"</span>, <span class="hljs-number">5</span> * <span class="hljs-number">4</span> * <span class="hljs-number">3</span> * <span class="hljs-number">2</span> * <span class="hljs-number">1</span>)
+print(<span class="hljs-string">"The remainder of 5 divided by 3 is"</span>, <span class="hljs-number">5</span> % <span class="hljs-number">3</span>)
+print(<span class="hljs-string">"The area of a circle with radius 4 is"</span>, <span class="hljs-number">3.14159</span> * <span class="hljs-number">4</span> * <span class="hljs-number">4</span>)
+</code></pre><hr>
+<p>If this all seems messy, don't worry. In the next lesson, we will learn about something that will make all of this much neater.</p>
+<h3 id="modulus-">Modulus (%)</h3>
+<p>The % operator, pronounced as modulus, does not function as a percent operator. Instead, it is essentially a "remainder" operator that returns the remainder of a division. You will understand what this means after looking at some examples.</p>
+<p>Examples: </p>
+<ul>
+<li><p><b>5 % 2 = 1</b></p>
+<p>5 divided by 2 is 2, with a remainder of 1,so 5 % 2 returns 1</p>
+</li>
+<li><p><b>6 % 2 = 0</b></p>
+<p>6 / 2 = 3 with no remainder, because 6 is wholly divisible by 2. So there is no remainder, meaning 6 % 2 returns 0.</p>
+</li>
+<li><p><b>4 % 10 = 4</b>.</p>
+<p>4 goes into 10 zero times, with a remainder of 4. Think about third grade division for these and it makes it very easy.</p>
+</li>
+</ul>
+<h3 id="what-is-modulus-useful-for-">What is Modulus useful for?</h3>
+<p>I think it is most used to determine whether a number is even or odd. </p>
+<p>Given a number <i>n</i>, we can say that:</p>
+<ul>
+<li>if <i>n</i> % 2 is 0, <i>n</i> is <b>even</b>.</li>
+<li>else, if n % 2 is 1, <i>n</i> is <b>odd</b>.</li>
+</ul>
+<p>Think about a few examples and this should make perfect sense. </p>
+<ul>
+<li>4 % 2 == 0, so 4 is even. We can say 4 is an even number because it divides evenly by 2 with no remainder.</li>
+<li>11 % 2 == 1, so 11 is odd. We can say 11 is an odd number because it does not divide evenly by 2.</li>
+</ul>
+</body></html>
